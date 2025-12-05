@@ -156,11 +156,6 @@ public class MyArrayList<T> {
 
   }
 
-  
-  
-
-
-
 
   /**
    * - 배열의 용량을 재조정하기 위한 헬퍼 메서드
@@ -179,6 +174,31 @@ public class MyArrayList<T> {
 
     // 4. data 참조 변수가 새 배열을 참조하도록 함.
     data = newData;
+  }
+
+
+  /**
+   * 리스트의 저장된 모든 요소를 하나의 문자열 형태로 반환 (디버깅용)
+   * ex) [e1, e2, e3]
+   * @return
+   */
+  @Override
+  public String toString(){
+    if(size == 0) return "[]";
+
+    StringBuilder sb = new StringBuilder();
+    sb.append("[");
+
+    for(int i = 0; i < size ; i++){
+      sb.append(data[i]);
+
+      if(i < size - 1){
+        sb.append(", ");
+      }
+    }
+
+    sb.append("]");
+    return sb.toString();
   }
   
 }
