@@ -52,7 +52,7 @@ public class Application {
 
     System.out.println("----- 덱이 비어있는지 확인 - isEmpty -----");
     System.out.println("isEmpty() 결과 : " + deque.isEmpty());
-    
+
     System.out.println("removelast() 결과 : " + deque.removeLast());
     System.out.println("isEmpty() 결과 : " + deque.isEmpty());
 
