@@ -53,8 +53,8 @@ public class B_BFSTest {
         "4 2\n" +
         "4 0";
     output3 = 2;
-
   }
+
 
   public static Stream<Arguments> provideSource() {
     return Stream.of(
@@ -63,13 +63,15 @@ public class B_BFSTest {
         arguments(input3, output3)
     );
   }
+
+
   @DisplayName("bfs")
   @Timeout(value = 1000, unit = TimeUnit.MILLISECONDS)
   @ParameterizedTest
   @MethodSource("provideSource")
   public void bfsTest(String input, Integer output) throws Exception {
-    Integer result = B_BFS.solution(input);
-    //Integer result = B_BFS_2.solution(input);
+    //Integer result = B_BFS.solution(input);
+    Integer result = B_BFS_2.solution(input);
     Assertions.assertEquals(output, result);
   }
 }
