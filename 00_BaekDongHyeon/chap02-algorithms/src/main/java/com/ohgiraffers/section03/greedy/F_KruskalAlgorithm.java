@@ -164,7 +164,7 @@ public class F_KruskalAlgorithm {
                 totalWeight += edge.weight;
 
                 /* 디버깅용 출력 (선택 사항) */
-                // System.out.println("선택한 간선: " + edge.u + "-" + edge.v + " (가중치: " + edge.weight + ")");
+                System.out.println("선택한 간선: " + edge.u + "-" + edge.v + " (가중치: " + edge.weight + ")");
 
                 /* 최적화: N-1개의 간선을 선택하면 조기 종료 가능 */
                 // if(선택된 간선 개수 == V - 1) break;
